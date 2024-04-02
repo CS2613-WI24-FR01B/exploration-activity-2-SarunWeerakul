@@ -25,7 +25,8 @@ Creating a basic GUI window in Racket using __racket/gui/base__ can be as simple
 (require racket/gui/base)
 
 (define frame (new frame% [label "Hello, GUI World!"]))
-(send frame show #t)```
+(send frame show #t)
+```
 
    The functions and commands that I use in my program:
    1. Creating GUI windows, frames, dialogs, buttons, text fields, labels, etc.
@@ -37,7 +38,8 @@ Creating a basic GUI window in Racket using __racket/gui/base__ can be as simple
    
  __Example:__
  
-```#lang racket
+```racket
+#lang racket
 (require racket/gui/base)
 
 ;; Define a button callback
@@ -49,7 +51,8 @@ Creating a basic GUI window in Racket using __racket/gui/base__ can be as simple
 (define button (new button% [parent frame]
                            [label "Click Me"]
                            [callback button-callback]))
-(send frame show #t)```
+(send frame show #t)
+```
 
  __Output:__
  
